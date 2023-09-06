@@ -13,6 +13,7 @@ import MessageBox from '../components/MessageBox.vue'
 import { user } from '../states/user'
 
 import { joinRoomContext } from '../contexts'
+import Info from './Info.vue'
 
 const { broadcast, listen, room } = inject(joinRoomContext)!
 
@@ -86,6 +87,8 @@ watchEffect(() => {
 </script>
 
 <template>
+  <Info />
+
   <History :messages="messages" />
 
   <MessageBox @submit="onSubmit" />

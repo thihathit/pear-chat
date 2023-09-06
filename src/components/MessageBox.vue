@@ -83,7 +83,6 @@ input {
   backdrop-filter: blur(20px);
   border-radius: 3px;
   padding: 10px 20px;
-  resize: vertical;
 
   font-size: 0.93em;
 
